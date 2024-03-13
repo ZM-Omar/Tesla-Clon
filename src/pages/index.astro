@@ -49,18 +49,21 @@ import Layout from '../layouts/Layout.astro';
 
 		</header>
 		<section class="bg-black h-screen w-screen text-left relative overflow-hidden">
-
-			<header class="z-30 relative">
-				<h2 class="text-white pt-40 text-[40px] font-medium">Find the Tesla for you</h2>
-				<p class="text-white text-sm">Discover which model is best for you based on your budget, driving habits and lifestyle.</p>
-			</header>
-
-			<div class="dx-hero-cta z-30 relative">
-				<a type="button" class="dx-hero__cta1 tds-btn tds-btn--primary" href="/choose" target="_self">Help Me Choose</a>
-			</div>
-
-			<div class="absolute top-0 bottom-0 h-full">
-			<video class="object-center" autoplay muted loop src="/video2.webm"></video>
+			<div class="flex flex-col gap-y-6">
+				<header class="z-30 relative">
+					<h2 class="text-white pt-40 text-[40px] font-medium">Find the Tesla for you</h2>
+					<p class="text-white text-sm">Discover which model is best for you based on your budget, driving habits and lifestyle.</p>
+				</header>
+	
+				<div class="z-30 relative">
+					<a type="button" href="/choose" target="_self">
+						<button class="bg-white px-10 mx-0 py-1 rounded-lg">Help Me Choose</button>
+					</a>
+				</div>
+	
+				<div class="absolute w-full top-0 bottom-0 h-screen">
+					<video class="object-cover h-screen w-full" autoplay muted loop src="/video2.webm"></video>
+				</div>
 			</div>
 		</section>
 	</main>
